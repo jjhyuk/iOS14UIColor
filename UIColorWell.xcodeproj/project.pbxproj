@@ -15,8 +15,21 @@
 		947273C92511D94E003A5A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947273C72511D94E003A5A62 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		947273E92511E6B7003A5A62 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		947273B92511D94C003A5A62 /* Xcode12Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcode12Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		947273B92511D94C003A5A62 /* UIColorWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIColorWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947273BC2511D94C003A5A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947273BE2511D94C003A5A62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		947273C02511D94C003A5A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +53,7 @@
 		947273B02511D94C003A5A62 = {
 			isa = PBXGroup;
 			children = (
-				947273BB2511D94C003A5A62 /* Xcode12Sample */,
+				947273BB2511D94C003A5A62 /* UIColorWell */,
 				947273BA2511D94C003A5A62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +61,12 @@
 		947273BA2511D94C003A5A62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				947273B92511D94C003A5A62 /* Xcode12Sample.app */,
+				947273B92511D94C003A5A62 /* UIColorWell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		947273BB2511D94C003A5A62 /* Xcode12Sample */ = {
+		947273BB2511D94C003A5A62 /* UIColorWell */ = {
 			isa = PBXGroup;
 			children = (
 				947273BC2511D94C003A5A62 /* AppDelegate.swift */,
@@ -64,27 +77,28 @@
 				947273C72511D94E003A5A62 /* LaunchScreen.storyboard */,
 				947273CA2511D94E003A5A62 /* Info.plist */,
 			);
-			path = Xcode12Sample;
+			path = UIColorWell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		947273B82511D94C003A5A62 /* Xcode12Sample */ = {
+		947273B82511D94C003A5A62 /* UIColorWell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 947273CD2511D94E003A5A62 /* Build configuration list for PBXNativeTarget "Xcode12Sample" */;
+			buildConfigurationList = 947273CD2511D94E003A5A62 /* Build configuration list for PBXNativeTarget "UIColorWell" */;
 			buildPhases = (
 				947273B52511D94C003A5A62 /* Sources */,
 				947273B62511D94C003A5A62 /* Frameworks */,
 				947273B72511D94C003A5A62 /* Resources */,
+				947273E92511E6B7003A5A62 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Xcode12Sample;
+			name = UIColorWell;
 			productName = Xcode12Sample;
-			productReference = 947273B92511D94C003A5A62 /* Xcode12Sample.app */;
+			productReference = 947273B92511D94C003A5A62 /* UIColorWell.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 947273B42511D94C003A5A62 /* Build configuration list for PBXProject "Xcode12Sample" */;
+			buildConfigurationList = 947273B42511D94C003A5A62 /* Build configuration list for PBXProject "UIColorWell" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				947273B82511D94C003A5A62 /* Xcode12Sample */,
+				947273B82511D94C003A5A62 /* UIColorWell */,
 			);
 		};
 /* End PBXProject section */
@@ -284,15 +298,18 @@
 		947273CE2511D94E003A5A62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Xcode12Sample/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = UIColorWell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jang.jinhyuk.Xcode12Sample;
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = jang.jinhyuk.UIColorWell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,15 +319,18 @@
 		947273CF2511D94E003A5A62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Xcode12Sample/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = UIColorWell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jang.jinhyuk.Xcode12Sample;
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = jang.jinhyuk.UIColorWell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		947273B42511D94C003A5A62 /* Build configuration list for PBXProject "Xcode12Sample" */ = {
+		947273B42511D94C003A5A62 /* Build configuration list for PBXProject "UIColorWell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				947273CB2511D94E003A5A62 /* Debug */,
@@ -329,7 +349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		947273CD2511D94E003A5A62 /* Build configuration list for PBXNativeTarget "Xcode12Sample" */ = {
+		947273CD2511D94E003A5A62 /* Build configuration list for PBXNativeTarget "UIColorWell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				947273CE2511D94E003A5A62 /* Debug */,
