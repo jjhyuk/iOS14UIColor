@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIColorPickerViewControllerDelegate {
     let selectColorView = UIView()
     let pickerBtn: UIButton = UIButton(type: .custom)
     var pickerDelegate: UIColorPickerViewControllerDelegate?
+    let colorPickerVC = UIColorPickerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,10 +68,7 @@ class ViewController: UIViewController, UIColorPickerViewControllerDelegate {
     }
     
     @objc func presentColorPickerViewController(_: Any) {
-        
-        let colorPickerVC = UIColorPickerViewController()
         colorPickerVC.delegate = self
-        
         self.present(colorPickerVC, animated: true, completion: nil)
         
     }
